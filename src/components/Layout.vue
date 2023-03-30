@@ -17,7 +17,7 @@
 
 <script setup>
 import Sidebar from './Sidebar/Sidebar.vue';
-    
+import './assets/main.css'
 
 </script>
 
