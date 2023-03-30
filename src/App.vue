@@ -9,7 +9,7 @@ import Layout from './components/Layout.vue'
   <!-- <img alt="Vue logo" src="./assets/logo.svg" />
   <HelloWorld msg="Hello Vue 3 + Vite" /> -->
   <Layout>
-    <router-view/>
+    <RouterView/>
   </Layout>
 </template>
 
