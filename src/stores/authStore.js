@@ -65,7 +65,7 @@ export const useAuthStore = defineStore("auth", {
             this.authStatus = null;
             this.authMessage = null;
             
-            await axios.post('/register', {
+            await axios.post('/api/register', {
                 name: credentials.name,
                 email: credentials.email,
                 password: credentials.password,
@@ -84,7 +84,7 @@ export const useAuthStore = defineStore("auth", {
         },
         /* Logout */
         handleLogout() {
-            axios.post('/logout')
+            axios.post('/api/logout')
             .then(response => {
                 this.authUser = null;
                 router.push({ name: 'Login' });
