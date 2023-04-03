@@ -20,7 +20,7 @@ export const useAuthStore = defineStore("auth", {
     },
     actions: {
         /* get token */
-       /* async getToken() {
+        async getToken() {
             await axios.get("/sanctum/csrf-cookie");
         },
         /* get user */
@@ -35,7 +35,7 @@ export const useAuthStore = defineStore("auth", {
             this.authStatus = null;
             this.authErrors = [];
             this.authMessage = null;
-            //this.getToken();
+            this.getToken();
             await axios.post('/api/login', {
                 email: credentials.email,
                 password: credentials.password,
